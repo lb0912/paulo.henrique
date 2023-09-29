@@ -1,0 +1,36 @@
+body {   
+    background-color:pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.viado{
+    display: block;
+    margin-left: -20px;
+}
+
+
+
+.resposta {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+#sim {
+    background-color: greenyellow;
+    border-radius: 10px;
+    width: 60px;
+    height: 30px;
+}
+
+#nao {
+    position: absolute;
+    margin-left: 80px;
+    background-color: darkorchid;
+    border-radius: 10px;
+    width: 60px;
+    height: 30px;
+}

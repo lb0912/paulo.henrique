@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div>
+            <h1>LGBTQ+</h1>
+        </div>
+
+        <div class="viado">
+            <h2>Paulo é um viado?</h2>
+        </div>
+        <div class="resposta">
+            <div class="resposta1">
+                <a href="https://youtu.be/d7BpBAL2ztc" target="_blank"> <button id="sim"> Sim</button></a>
+
+            </div>
+            <button onmouseover="fuja()" id="nao"> Não</button>
+        </div>
+    </main>
+
+    <script>
+        function fuja() {
+            var botaoNao = document.getElementById("nao")
+            var larguraJanela = window.innerWidth;
+            var alturaJanela = window.innerHeight;
+
+            var maxX = larguraJanela - botaoNao.offsetWidth;
+            var maxY = alturaJanela - botaoNao.offsetHeight;
+
+            var aleatotorioX = Math.floor(Math.random() * maxX);
+
+            var aleatotorioY = Math.floor(Math.random() * maxY);
+
+            botaoNao.style.left = aleatotorioX + "px";
+            botaoNao.style.top = aleatotorioY + "px";
+        }
+    </script>
+
+</body>
+
+</html>
